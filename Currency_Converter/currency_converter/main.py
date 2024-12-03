@@ -26,7 +26,7 @@ list_of_currency=[]
 
 for value, key in result.items():
     list_of_currency.append([value,key])
-
+list_of_currency.append(['Lei','1'])
 def exchange_money(amount, from_currency, to_currency, lista_of_currency):
     y=0
     from_currency_value=0
