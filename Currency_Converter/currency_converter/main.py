@@ -27,9 +27,30 @@ list_of_currency=[]
 for value, key in result.items():
     list_of_currency.append([value,key])
 
+def exchange_money(amount, from_currency, to_currency, lista_of_currency):
+    y=0
+    from_currency_value=0
+    to_currency_value=0
+    for x in lista_of_currency:
+        if x[0]==from_currency:
+            y=y+1
+            from_currency_value=float(x[1])
+        if x[0]==to_currency:
+            y=y+2
+            to_currency_value=float(x[1])
+    if y!=3:
+        print ("moneda nu exista")
+        return None
+    amount=amount*from_currency_value
+    amount=amount/to_currency_value
+    return amount
 
-to_check="Dolarul singaporez"
-for x in list_of_currency:
-    if to_check==x[0]:
-        print("da")
-        break
+
+amount=float(input("suma de bani="))
+from_currency=input("valuta initiala=")
+to_currency=input("valuta finala")
+
+
+
+exchange_result=exchange_money(amount, from_currency, to_currency, list_of_currency)
+print(f"suma {amount} {from_currency} este egala cu {exchange_result} {to_currency}")
