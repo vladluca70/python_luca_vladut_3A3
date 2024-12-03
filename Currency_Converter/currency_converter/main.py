@@ -20,3 +20,16 @@ def get_currency_from_website():
         value = cells[2].text.strip()
         dict.update({currency: value})
     return dict
+
+result=get_currency_from_website()
+list_of_currency=[]
+
+for value, key in result.items():
+    list_of_currency.append([value,key])
+
+
+to_check="Dolarul singaporez"
+for x in list_of_currency:
+    if to_check==x[0]:
+        print("da")
+        break
