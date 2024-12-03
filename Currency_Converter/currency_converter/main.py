@@ -20,7 +20,3 @@ def get_currency_from_website():
         value = cells[2].text.strip()
         dict.update({currency: value})
     return dict
-
-result=get_currency_from_website()
-for x, y in result.items():
-    print(f"{x} : {y}")
