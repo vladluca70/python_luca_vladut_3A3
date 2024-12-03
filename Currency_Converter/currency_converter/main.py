@@ -16,10 +16,9 @@ def get_currency_from_website():
     for row in table.find_all('tr'):
         cells = row.find_all('td')
 
-        if len(cells) > 1:
-            currency = cells[1].get_text(strip=True)
-            value = cells[2].get_text(strip=True)
-            dict.update({currency: value})
+        currency = cells[1].get_text(strip=True)
+        value = cells[2].get_text(strip=True)
+        dict.update({currency: value})
     return dict
 
 result=get_currency_from_website()
