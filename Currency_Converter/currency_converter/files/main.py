@@ -18,4 +18,6 @@ from final_dict import final_dict
 #all_currencies=final_dict()
 #print(all_currencies)
 
-interface()
+currency_and_values=final_dict()
+
+interface(currency_and_values)
