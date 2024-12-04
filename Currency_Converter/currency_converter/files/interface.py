@@ -1,7 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
 from exchange_money import exchange_money
-
 
 def interface(currency_and_values):
     root = tk.Tk()
