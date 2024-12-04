@@ -15,7 +15,7 @@ from final_dict import final_dict
 # exchange_result=exchange_money(amount, from_currency, to_currency, list_of_currency)
 # print(f"suma {amount} {from_currency} este egala cu {exchange_result} {to_currency}")
 
-all_currencies=final_dict()
-print(all_currencies)
+#all_currencies=final_dict()
+#print(all_currencies)
 
-#interface()
+interface()
