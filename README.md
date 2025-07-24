@@ -21,14 +21,10 @@ The crawler is responsible for:
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/Currency-Converter.git
+   git clone https://github.com/vladluca70/python_luca_vladut_3A3.git
    cd Currency-Converter
    ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
+2. Run the application:
    ```bash
    python main.py
    ```
